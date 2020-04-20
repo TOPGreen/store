@@ -11,7 +11,7 @@
     <div class="form-group">
       <label for="address">Адрес доставки</label>
       <input formControlName="address" type="text" class="form-control" id="address"
-             [class.is-invalid]="!orderForm.get('address').valid && orderForm.get('address').dirty"
+             [class.is-invalid]="!orderForm.get('address').valid && orderForm.get('address').touched"
              placeholder="г.Москва">
       <div class="invalid-feedback">
         Укажите адрес доставки
@@ -20,7 +20,7 @@
     <div class="form-group">
       <label for="name">Ваше имя</label>
       <input formControlName="client" type="text" class="form-control" id="name" aria-describedby="emailHelp"
-             [class.is-invalid]="!orderForm.get('client').valid && orderForm.get('client').dirty"
+             [class.is-invalid]="!orderForm.get('client').valid && orderForm.get('client').touched"
              placeholder="Иван">
       <div class="invalid-feedback">
         Укажите имя
@@ -29,7 +29,7 @@
     <div class="form-group">
       <label for="email">Ваш Email</label>
       <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
-             [class.is-invalid]="!orderForm.get('email').valid && orderForm.get('email').dirty"
+             [class.is-invalid]="!orderForm.get('email').valid && orderForm.get('email').touched"
              placeholder="email@email.ru">
       <div class="invalid-feedback">
         Укажите корректный email

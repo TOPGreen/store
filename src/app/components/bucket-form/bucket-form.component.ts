@@ -64,6 +64,8 @@ export class BucketFormComponent implements OnInit {
     if (this.orderForm.valid) {
       alert('Ваш заказ принят!');
       this.bucketService.clearBucket();
+    } else {
+      this.orderForm.markAllAsTouched();
     }
   }
 
