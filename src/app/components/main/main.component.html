@@ -1,0 +1,4 @@
+<div class="d-flex flex-wrap justify-content-between p-2">
+  <app-item *ngFor="let item of items; let index = index" [item]="item"
+            (add)="onItemAdd($event)"></app-item>
+</div>
